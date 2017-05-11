@@ -343,11 +343,12 @@ git checkout commit</pre>
 
 git-reset命令主要用来删除commit，它有三个参数: 	`--mixed` `--soft` `--hard`, `--soft`只影响`commit history`，	`--mixed`影响 `commit history`和`staged snapshot`，而`--hard`会连`working directory`也影响
 
-Command	| Scope|	Common use cases
+
+Command	| Scope | Common use cases |
 --- |
-git reset|Commit-level	|Discard commits in a private branch or throw away uncommited changes
-git reset	|File-level|	Unstage a file
-git checkout	|Commit-level	|Switch between branches or inspect old snapshots
-git checkout|	File-level	|Discard changes in the working directory
-git revert	|Commit-level	|Undo commits in a public branch
-git revert	|File-level|	(N/A)
+git reset | Commit-level | Discard commits in a private branch or throw away uncommited changes
+git reset | File-level | Unstage a file
+git checkout | Commit-level | Switch between branches or inspect old snapshots
+git checkout | File-level | Discard changes in the working directory
+git revert | Commit-level | Undo commits in a public branch
+git revert | File-level | (N/A)
