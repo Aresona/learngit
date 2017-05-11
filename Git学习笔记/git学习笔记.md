@@ -295,7 +295,7 @@
 
 
 
-# `git reset` `git checkout` `git revert` 三个命令比较
+# [`git reset` `git checkout` `git revert` 三个命令比较](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
 
 `git` 有两个引用，一个是`HEAD`，另外一个是`branch`,它们引用的对象都是`commit`;一般情况下，`HEAD`会指向一个`branch`，而`branch`会指向一个`commit`；
 
@@ -342,3 +342,12 @@ git checkout commit</pre>
 ### `git reset`的三个参数
 
 git-reset命令主要用来删除commit，它有三个参数: 	`--mixed` `--soft` `--hard`, `--soft`只影响`commit history`，	`--mixed`影响 `commit history`和`staged snapshot`，而`--hard`会连`working directory`也影响
+
+Command	| Scope|	Common use cases
+--- |
+git reset|Commit-level	|Discard commits in a private branch or throw away uncommited changes
+git reset	|File-level|	Unstage a file
+git checkout	|Commit-level	|Switch between branches or inspect old snapshots
+git checkout|	File-level	|Discard changes in the working directory
+git revert	|Commit-level	|Undo commits in a public branch
+git revert	|File-level|	(N/A)
